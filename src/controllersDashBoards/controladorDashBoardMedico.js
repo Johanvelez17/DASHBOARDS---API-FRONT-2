@@ -1,85 +1,16 @@
+import {buscarMedicos} from "../services/servicioMedico.js"
+
 //OBJETIVO: RECIBIR DATOSS DEL BACK Y HACERLES (render=PINTARLOS)
-//1. QUEMAR O SIMULAR LOS DATOS 
-let medicos=[
-    {
-        id: 10,
-        nombre:"Doctor Krápula",
-        matriculaProfesional:"Indefinido",
-        especialidad:"Dentista",
-        salario:2000000,
-        ips:"SURA",
-        correo:"Elpibedemibarrio@gmail.com",
-        telefono:"+57 229430349",
-        direccionConsultorio:"Calle 2b #4a",
-        finDeSemanaDisponible:true
-    },
-    {
-        id:11,
-        nombre:"Dave mustaine",
-        matriculaProfesional: "indefinido",
-        especialidad: "Pediatra",
-        salario: 1800000,
-        ips: "Colpatria",
-        correo: "DaveMega@gmail.com",
-        telefono: "+57 321654987",
-        direccionConsultorio: "Calle 12 #5-45",
-        finDeSemanaDisponible: true
-    },
-    {
-        id: 12,
-        nombre: "Lilith Maiden",
-        matriculaProfesional: "indefinido",
-        especialidad: "general",
-        salario: 2200000,
-        ips: "SaludTotal",
-        correo: "Lilith666@gmail.com",
-        telefono: "+57 312358792",
-        direccionConsultorio: "Carrera 15 #8-23",
-        finDeSemanaDisponible: false
-    },
-    {
-        id: 13,
-        nombre: "Maradona Cuccitini",
-        matriculaProfesional: "indefinido",
-        especialidad: "Dermatólogo",
-        salario: 2500000,
-        ips: "Sanitas",
-        correo: "amoapelé@gmail.com",
-        telefono: "+57 300456789",
-        direccionConsultorio: "Avenida 9 #17-11",
-        finDeSemanaDisponible: true
-    },
-    {
-        id: 14,
-        nombre: "James Gaucho",
-        matriculaProfesional: "indefinido",
-        especialidad: "Psicólogo",
-        salario: 1700000,
-        ips: "Coomeva",
-        correo: "jamesgaucho66@gmail.com",
-        telefono: "+57 320112233",
-        direccionConsultorio:"Calle 45 #7-88",
-        finDeSemanaDisponible:true
-    },
-    {
-        id: 15,
-        nombre: "Ricardo Arjona",
-        matriculaProfesional: "indefinido",
-        especialidad: "Oftalmólogo",
-        salario: 2300000,
-        ips: "EPSSur",
-        correo: "Richy Arjona@gmail.com",
-        telefono: "+57 315478900",
-        direccionConsultorio: "Carrera 28 #4-65",
-        finDeSemanaDisponible: false
-    }
-];
+//1. LLAMAR AL API
+buscarMedicos()
+.then(function(respuestaBack){
+    console.log(respuestaBack)
 
 //2. CREAR UNA REFERENCIA A UNA ETIQUETA DE HTML DONDE VAMOS A RENDERIZAR
 let fila=document.getElementById("fila");
 
 //3. SE RECORREN LOS DATOS PARA OBTENERLOS DE FORMA SEPARADA
-medicos.forEach(function(medico){
+respuestaBack.forEach(function(medico){
     console.log(medico);
     //4. SE CREA COLUMNAS 
     let columna=document.createElement("div");
@@ -131,3 +62,6 @@ medicos.forEach(function(medico){
     columna.appendChild(tarjeta);
     fila.appendChild(columna);
 });
+})
+
+
