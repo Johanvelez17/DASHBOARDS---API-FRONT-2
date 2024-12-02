@@ -27,30 +27,38 @@
         <nav id="seccionesNavbar">
             <!--AQUÍ VAN LOS ITEMS DE LA BARRA DE NAVEGACIÓN-->
             <div>
+              <ul>
                 <li>
-                  <a  class="uno" href="./src/views/paciente.html">Paciente</a>
-                </li>
-            </div>
-            <div>
-                <li>
-                  <a  class="dos" href="./src/views/medico.html">Médico</a>
-                </li>
-            </div>
-            <div>
-                <li>
-                  <a  class="tres" href="./src/views/enfermedad.html">Enfermedad</a>
-                </li>
-            </div>
-            <div>
-                <li>
-                  <a  class="cuatro" href="./src/views/medicamento.html">Medicamento</a>
-                </li>
-            </div>
-            <div>
-                <li>
-                  <a  class="cinco" href="./src/views/signovital.html">Signo Vital</a>
-                </li>
-            </div>
+                  <a class="bg-primary text-white" href="#Inicio">Inicio</a>
+                </li> 
+
+                  <li>
+                    <a  class="uno" href="./src/views/paciente.html">Paciente</a>
+                  </li>
+
+                  <li>
+                    <a  class="dos" href="./src/views/medico.html">Médico</a>
+                  </li>
+
+                  <li>
+                    <a  class="tres" href="./src/views/enfermedad.html">Enfermedad</a>
+                  </li>
+
+                  <li>
+                    <a  class="cuatro" href="./src/views/medicamento.html">Medicamento</a>
+                  </li>
+
+                  <li>
+                    <a  class="cinco" href="./src/views/signovital.html">Signo Vital</a>
+                  </li> 
+
+                  <li>
+                    <a href="./src/views/contacto.html">Contáctanos</a>
+                  </li> 
+
+              </ul>
+          </div>
+            
         </nav>
 
     </header>
@@ -65,24 +73,24 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./assets/img/sistema.webp" class="d-block w-100" alt="...">
+                <img src="./assets/img/imagen-banner2.webp" class="d-block w-100" alt="Doctor mostrando radiografía a mujer mayor">
                 <div class="carousel-caption d-none d-md-block color-texto">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
+                  <!-- <h5>Mide tus signos vitales</h5>
+                  <p>Some representative placeholder content for the first slide.</p> -->
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./assets/img/tigre.png" class="d-block w-100" alt="...">
+                <img src="./assets/img/imagen-banner3.jpg" class="d-block w-100" alt="doctores sonriendo">
                 <div class="carousel-caption d-none d-md-block color-texto">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+                  <!-- <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p> -->
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./assets/img/medicos.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/img/medicos.jpg" class="d-block w-100" alt="mano de doctor en pantalla digital flotante">
                 <div class="carousel-caption d-none d-md-block color-texto">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <!-- <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p> -->
                 </div>
               </div>
             </div>
@@ -320,8 +328,50 @@
           </section>
       </main>
     <footer>
-      <div class="cuerpo">
-          
+      <div class="container-footer">
+
+          <div id="contenedor-columna1">
+              <div id="contenedor-logo-footer">
+                <!-- aqui va el logo de la pagina del footer -->
+                  <img src="./assets/img/logoPagina.png" alt="Logo PSM" title="Servicios Médicos PSM" class="imagen-footer">
+              </div>
+          </div>
+
+          <div class="sobre-nosotros">
+              <h4>Sobre Nosotros</h4>
+              <p>
+                Este proyecto es una página web para una empresa de servicios médicos, creada con el fin de
+                facilitar el acceso a la información y el seguimiento de los pacientes afiliados. Con esta
+                plataforma, buscamos mejorar la eficiencia y la calidad de atención de los servicios médicos.
+
+                Este proyecto es una página web para una empresa de servicios médicos, creada con el fin de
+                facilitar el acceso a la información y el seguimiento de los pacientes afiliados. Con esta
+                plataforma, buscamos mejorar la eficiencia y la calidad de atención de los servicios médicos.
+              </p>
+          </div>
+
+          <div class="footer-columna3">
+              <div>
+                  <ul>
+                      <li>
+                        <a href="./src/views/puntos-atencion.html">Puntos de atención</a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/Johanvelez17/DASHBOARDS---API-FRONT-2" target="_blank">Repositorio de la página</a>
+                      </li>
+                      <li>
+                        <a href="./src/views/contacto.html">Contáctanos</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+      </div>
+
+      <div class="footer-inferior">
+          <div>
+            <p>© Copyright - 2024  ENTIDAD PRESTADORA DE SERVICIOS MÉDICOS - Derechos reservados.</p>
+          </div>
       </div>
     </footer>
     <script src="./src/paginaInicio/inicio.js"></script>

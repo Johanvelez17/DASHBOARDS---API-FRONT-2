@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signo Vital</title>
+    <title>Puntos de Atención</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../assets/styles/signoVital.css">
+    <link rel="stylesheet" href="../../assets/styles/puntos-atención.css">
 </head>
 <body>
 
@@ -21,7 +21,7 @@
                 <h3 class="tituloMenu">Servicios Médicos <b>PSM<b></h3>
             </div>
         </nav>
-        
+
         <nav id="seccionesNavbar">
             <!--AQUÍ VAN LOS ITEMS DE LA BARRA DE NAVEGACIÓN-->
             <div>
@@ -31,7 +31,7 @@
                     </li> 
 
                     <li>
-                        <a  class="uno" href="../views/paciente.html">Paciente</a>
+                        <a  class="" href="./src/views/paciente.html">Paciente</a>
                     </li>
 
                     <li>
@@ -47,7 +47,7 @@
                     </li>
 
                     <li>
-                        <a  class="bg-primary text-white" href="../views/signovital.html">Signo Vital</a>
+                        <a  class="cinco" href="../views/signovital.html">Signo Vital</a>
                     </li> 
 
                     <li>
@@ -55,40 +55,26 @@
                     </li> 
                 </ul>
             </div>
-        </nav>
     </header>
-    
-    <main>
-        <section class="container my-4">
-            <div class="row contenedor-form">
-                <div class="col-12 col-md-8">
-                    <h3 class="text-center mt-5">Registro De Signo Vital</h3>
-                    <form class="p-5 border rounded shadow">
-                        <div class="row">
-                            <div class="col-6">
-                                <label class="form-label" for="nombresignovital">Nombres: </label>
-                                <input type="text" class="form-control" id="nombresignovital" name="nombresignovital">
-                            </div>
-                            <div class="col-6">
-                                <label class="form-label" for="valorsignovital">Valor: </label>
-                                <input type="number" class="form-control" id="valorsignovital" name="valorsignovital">
-                            </div>
-                        </div>
-                        <div class="row my-3">
-                            <div class="col-6">
-                                <label class="form-label" for="fechamedidasignovital">Fecha Medida: </label>
-                                <input type="date" class="form-control" id="fechamedidasignovital" name="fechamedidasignovital">
-                            </div>
-                        </div>
 
-                        <button class="btn btn-primary w-100" type="submit" id="botonregistrosignovital">Registrar</button>
-                    </form>
-                </div>
+    <main>
+        <div id="contenedor-titulo-mapa">
+            <h3>Estos son nuestros puntos de atención para nuestros usuarios</h2>
+        </div>
+        <div id="contenedor-cuerpo">
+            <div class="contenedor-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d126907.88242242576!2d-75.60490444261909!3d6.280641993862189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sIPS%20Sura!5e0!3m2!1sen!2sco!4v1733086538482!5m2!1sen!2sco" " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section>
+        </div>
     </main>
+
+    <footer>
+
+    </footer>
+
+    
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="../controllers/controladorsignovital.js"></script>
+    <script src="../paginaInicio/inicio.js"></script>
 </body>
 </html>

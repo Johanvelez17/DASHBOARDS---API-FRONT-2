@@ -39,11 +39,27 @@ prueba.addEventListener("click", ()=>{
     
 });
 
-// .cuerpo{
-//     background-color: #000;
-//     width:100%;
-//     height:2000px;
-//     position: relative;
-//     z-index: 2;
-//     top:-2000px;
+
+// // ACTIVANDO EL BOTÓN PARA PODER USARLO 
+
+// // Obtener el botón, la ventana modal y el botón de cierre
+// const botonMapa = document.getElementById("boton-mapa");
+// const ventanaMapa = document.getElementById("ventana-mapa");
+// const cerrarBoton = document.getElementById("cerrarBoton");
+
+// // Al hacer clic en el botón, mostrar la ventana modal
+// botonMapa.onclick = function() {
+//   ventanaMapa.style.display = "block";  // Mostrar la ventana modal
+// }
+
+// // Al hacer clic en el botón de cierre, ocultar la ventana modal
+// cerrarBoton.onclick = function() {
+//   ventanaMapa.style.display = "none";  // Ocultar la ventana modal
+// }
+
+// // Al hacer clic fuera de la ventana modal, también la cerramos
+// window.onclick = function(event) {
+// if (event.target == ventanaMapa) {
+//     ventanaMapa.style.display = "none";  // Ocultar la ventana modal si se hace clic fuera de ella
+// }
 // }

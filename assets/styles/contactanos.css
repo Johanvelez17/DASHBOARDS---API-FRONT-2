@@ -1,0 +1,190 @@
+.menu{
+    background-color: #cde4ff;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#contenedorTituloMenu{
+    background-color:transparent;
+    width:900px;
+    display:flex;
+    position: absolute;
+    left:230px;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px !important;
+    text-shadow: 0 4px 3px rgb(27, 39, 219);
+}
+
+.tituloMenu{
+    color:#2395f1;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+
+
+/* Barra de navegación */
+#seccionesNavbar div{
+    height: 40px;
+    width:100%;
+    position: absolute;
+    z-index: 2;
+    background-color: red;
+    margin-top:-85px;
+    position: fixed;
+}
+
+#seccionesNavbar div ul{
+    background-color:  #2395f1;
+    height: 42px;
+    display: flex;
+    justify-content:center;
+}
+
+#seccionesNavbar div ul li{
+    list-style: none;
+}
+
+
+#seccionesNavbar div ul li a{
+    text-decoration: none;
+    color:#DDD;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    background-color: #2395f1;
+    padding:9px 20px;
+    display: flex;
+    align-items: center;
+    transition: background-color 1s ease-out, color 0.3s ease-out;
+}
+
+#seccionesNavbar div ul li a:hover{
+    background-color: #FFF;
+    color:#2395F1;
+}
+
+
+/* Tarjetas de presentación */
+
+.titulo-contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+}
+
+.titulo-contenedor h2{
+    background: linear-gradient(transparent,#0d71f344,transparent);
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color:#FFF;
+    text-shadow: 0 2px 7px #0d71f3;
+}
+
+.contenedor-tarjetas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-tarjetas a{
+    text-decoration: none;
+    color:#132d75;
+}
+
+.card {
+    box-sizing: border-box;
+    box-shadow: 0 0 20px 0 #000;
+    background: linear-gradient(rgba(8, 255, 181, 0.533), #fff, rgba(109, 211, 180, 0.533), #fff);
+    border-top: 3px solid #111;
+    border-radius: 4px;
+    width: 290px;
+    margin:auto;
+    display: inline-block;
+    margin: 50px 10px 10px 30px;
+    font-family: sans-serif;
+}
+
+
+.red_card {
+    background: linear-gradient(#f229, #fff,#f229, #fff);
+}
+
+.violet_card {
+    background: linear-gradient( #30f8, #fff, #30f4, #fff)
+}
+
+.orange-card{
+    background: linear-gradient( #e97b32, #fff, #f7a066, #fff)
+}
+
+
+.card_título {
+    color: #fff;
+    text-align:center;
+    background: #00fb;
+    margin:0;
+    margin-bottom: 15px;
+    text-shadow: 4px 0 0 #000;
+    padding:7px 0;
+}
+
+.título_red {
+    background-color: #f00b;
+    padding:7px 0;
+}
+
+.título_violet {
+    background-color: #40f;
+    padding:7px 0;
+}
+
+.título-orange{
+    background-color: #e05200;
+    padding:7px 0;
+}
+
+.card_subtitulo {
+    padding: 0px 15px 5px 15px;
+    margin-top:-20px;
+    text-align:center;
+    color: #111;
+    letter-spacing: 1.5px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+.card_primer_párrafo{
+    margin:0;
+    text-align:center;
+    font-size: 13px;
+    padding:10px 10px;
+}
+
+
+.card_segundo_párrafo {
+    text-align:center;
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
+.card_tercer_párrafo {
+    text-align:center;
+    font-size: 13px;
+    padding: 5px 20px;
+}
+
+.card_img {
+margin-bottom: 40px ;
+border-radius: 50%;
+height:150px;
+width:150px;
+position: relative;
+left: 65px;
+bottom: px;
+}
