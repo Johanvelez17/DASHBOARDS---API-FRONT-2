@@ -1,4 +1,5 @@
-import {buscarPacientes} from "../services/servicioPaciente.js"
+import { buscarPacientes } from "../services/servicioPaciente.js";
+
 
 //CONTROLADOR DE DASHBOARDS
 
@@ -29,8 +30,8 @@ buscarPacientes()
 
 
 //6. Se crea una etiqueta para poner el nombre del paciente
-let nombre = document.createElement("h2"); 
-nombre.textContent = paciente.nombre;
+let nombres = document.createElement("h2"); 
+nombres.textContent = paciente.nombres;
 
 let fechaNacimiento = document.createElement("p")
 fechaNacimiento.textContent = paciente.fechaNacimiento;
@@ -58,7 +59,7 @@ fechaAfiliacion .textContent = paciente.fechaAfiliacion ;
 
 
 //PASO FINAL (ORDENANDO LAS CARTAS)
-    tarjeta.appendChild(nombre);
+    tarjeta.appendChild(nombres);
     tarjeta.appendChild(fechaNacimiento);
     tarjeta.appendChild(ciudad);
     tarjeta.appendChild(correo);

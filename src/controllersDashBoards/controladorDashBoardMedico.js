@@ -10,8 +10,11 @@ buscarMedicos()
 let fila=document.getElementById("fila");
 
 //3. SE RECORREN LOS DATOS PARA OBTENERLOS DE FORMA SEPARADA
+
 respuestaBack.forEach(function(medico){
     console.log(medico);
+
+
     //4. SE CREA COLUMNAS 
     let columna=document.createElement("div");
     columna.classList.add("col");
@@ -22,8 +25,8 @@ respuestaBack.forEach(function(medico){
     tarjeta.classList.add("card","p-5","h-100","shadow");
 
     //6. SE CREA UNA ETIQUETA PARA PONER EL NOMBRE DEL PACIENTE 
-    let nombre=document.createElement("h2");
-    nombre.textContent=medico.nombre
+    let nombres=document.createElement("h2");
+    nombres.textContent=medico.nombres
 
     let matriculaProfesional=document.createElement("p");
     matriculaProfesional.textContent=medico.matriculaProfesional
@@ -50,7 +53,7 @@ respuestaBack.forEach(function(medico){
     finDeSemanaDisponible.textContent=medico.finDeSemanaDisponible
 
     //PASO FINAL (ORDENAR LAS CARTAS)
-    tarjeta.appendChild(nombre);
+    tarjeta.appendChild(nombres);
     tarjeta.appendChild(matriculaProfesional);
     tarjeta.appendChild(especialidad);
     tarjeta.appendChild(salario);
