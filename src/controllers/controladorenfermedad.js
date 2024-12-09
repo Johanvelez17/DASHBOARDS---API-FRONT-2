@@ -29,7 +29,9 @@ botonRegistroEnfermedad.addEventListener("click", function(evento){
           title: "Registro Exitoso",
           text: "Ya eres parte de nuestra gran familia!",
           icon: "success"
-        });
+        }).then(()=>{
+            window.location.href = "../views/dashboards/dashBoardEnfermedad.html"
+          })
 })
 })
 

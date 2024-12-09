@@ -31,6 +31,5 @@ export async function registrarPaciente(datosPaciente){
     let respuestaInicial = await fetch(url, peticion)
     let respuestaFinal = await respuestaInicial.json()
     return respuestaFinal;
-    
 }
 

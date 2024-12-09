@@ -37,7 +37,7 @@ botonRegistroPaciente.addEventListener("click", function(evento){
       telefono: telefonoPaciente.value,
       ips: ipsPaciente.value,
       grupoIngreso:grupoIngresoPaciente.value,
-      tienePoliza:true,
+      tienePoliza:polizaPaciente.Checked,
       fehaAfiliacion:fechaAfiliacionPaciente.value
     };
     
@@ -51,7 +51,9 @@ botonRegistroPaciente.addEventListener("click", function(evento){
           title: "Registro Exitoso",
           text: "Ya eres parte de nuestra gran familia!",
           icon: "success"
-        });
+        }).then(()=>{
+          window.location.href = "../views/dashboards/dashBoardPaciente.html"
+        })
     })
     
     

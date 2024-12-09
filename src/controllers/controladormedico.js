@@ -27,7 +27,7 @@ botonRegistroMedico.addEventListener("click", function(evento){
         correo: correoMedico.value,
         telefono: telefonoMedico.value,
         direccionConsultorio:  direccionMedico.value,
-        disponibleFindesemana: true
+        disponibleFindesemana: disponibleFinDeSemanaMedico.checked
     }
 
     console.log(datosFormularioMedico)
@@ -38,7 +38,9 @@ botonRegistroMedico.addEventListener("click", function(evento){
           title: "Registro Exitoso",
           text: "Ya eres parte de nuestra gran familia!",
           icon: "success"
-        });
+        }).then(()=>{
+            window.location.href = "../views/dashboards/dashBoardMedico.html"
+          })
     })
 
 });

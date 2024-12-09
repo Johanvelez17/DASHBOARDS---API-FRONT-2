@@ -25,7 +25,7 @@ botonRegistroMedicamento.addEventListener("click", function(evento){
         fechaCaducidad: fechaCaducidadMedicamento.value,
         contraindicaciones: contraIndicacionesMedicamento.value,
         registro: registroMedicamento.value,
-        tieneCopago: tieneCopagoMedicamento.value == "on" ? true : false
+        tieneCopago: tieneCopagoMedicamento.checked
     }
 
     console.log(datosFormularioMedicamento)
@@ -36,6 +36,8 @@ botonRegistroMedicamento.addEventListener("click", function(evento){
           title: "Registro Exitoso",
           text: "Ya eres parte de nuestra gran familia!",
           icon: "success"
-        });
+        }).then(()=>{
+            window.location.href = "../views/dashboards/dashBoardMedicamento.html"
+          })
     })
 })
