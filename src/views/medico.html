@@ -133,21 +133,21 @@
                                     <i class="bi bi-person-circle"></i>
                                   </span>
                                   <label>Nombres</label>
-                                  <input type="text"  id="nombremedico" placeholder="José Gregorio Hernández">
+                                  <input type="text"  id="nombremedico" placeholder="José Gregorio Hernández" required>
                               </div>
                               <div>
                                   <span>
                                     <i class="bi bi-file-earmark-medical-fill"></i>
                                   </span>
                                   <label>Matricula Profesional</label>
-                                  <input type="text" id="matriculamedico" placeholder="3300886" required pattern="^\d{9}$" title="Debe ingresar un número de 7 dígitos">
+                                  <input type="text" id="matriculamedico" placeholder="3300886" required pattern="^\d{7}$" title="Debe ingresar un número de 7 dígitos">
                               </div>
                               <div>
                                   <span>
                                     <i class="bi bi-journal-medical"></i>
                                   </span>
                                   <label >Especialidad</label>
-                                  <input type="text" id="especialidadmedico" placeholder="Psicólogo/a">
+                                  <input type="text" id="especialidadmedico" placeholder="Psicólogo/a" required>
                               </div>
                               <div>
                                   <span>
@@ -185,11 +185,11 @@
                                     <input type="text" id="direccionmedico" placeholder="Cl. 78 #79A-03">
                               </div>
                               <div class="form-check form-switch ms-3">
-                                <label class="form-check-label" for="flexSwitchCheckDefault">¿Disponible fin de semana?</label>
+                                <label class="form-check-label">¿Disponible fin de semana?</label>
                                 <input class="form-check-input checkbox" type="checkbox" role="switch" id="disponibilidadmedico">
                               </div>
                           
-                              <button class="btn btn-primary " type="submit" id="botonregistromedico">Registrar</button>
+                              <button class="btn btn-primary" type="submit" id="botonregistromedico">Registrar</button>
 
                             </form>
                         </div>
@@ -201,6 +201,7 @@
             </div>
         </section>
     </main>
+    <script src="../../assets/scripts/vistaMedico.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../controllers/controladormedico.js" type="module"></script>
