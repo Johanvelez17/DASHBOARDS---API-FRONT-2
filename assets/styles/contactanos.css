@@ -1,3 +1,7 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 .menu{
     background-color: #cde4ff;
     display: flex;
@@ -97,15 +101,22 @@
 
 .card {
     box-sizing: border-box;
-    box-shadow: 0 0 20px 0 #000;
+    box-shadow: 0 0 10px 0 #000;
     background: linear-gradient(#0084ff22, #fff, #0084ff22, #fff);
-    border-top: 3px solid #111;
+    border-top: 3px solid #0562b9;
     border-radius: 4px;
     width: 290px;
     margin:auto;
     display: inline-block;
     margin: 50px 10px 10px 30px;
     font-family: sans-serif;
+    transition: transform 0.4s ease-in-out, 
+    box-shadow 0.4s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #0378e6;
 }
 
 .card_título {
@@ -116,6 +127,7 @@
     margin-bottom: 15px;
     text-shadow: 4px 0 0 #03539e;
     padding:7px 0;
+    font-size: 30px;
 }
 
 
