@@ -1,4 +1,6 @@
 import {buscarMedicamentos} from "../services/servicioMedicamento.js"
+ 
+let cantidadMedicamentos = 0;
 
 //OBJETIVO: RECIBIR DATOSS DEL BACK Y HACERLES (render=PINTARLOS)
 //1. QUEMAR O SIMULAR LOS DATOS 
@@ -6,6 +8,7 @@ import {buscarMedicamentos} from "../services/servicioMedicamento.js"
 buscarMedicamentos()
 .then(function(respuestaBack){
   console.log(respuestaBack) 
+  cantidadMedicamentos = respuestaBack.length;
 
 //2. CREAR UNA REFERENCIA A UNA ETIQUETA DE HTML DONDE VAMOS A RENDERIZAR
 let fila=document.getElementById("fila");
@@ -63,3 +66,5 @@ respuestaBack.forEach(function(medicamento){
 });
 
 });
+let contador = document.getElementById("contador");
+contador.textContent = cantidadMedicamentos;

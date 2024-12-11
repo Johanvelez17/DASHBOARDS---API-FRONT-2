@@ -1,10 +1,11 @@
 import {buscarMedicos} from "../services/servicioMedico.js"
-
+let cantidadMedicos = 0;
 //OBJETIVO: RECIBIR DATOSS DEL BACK Y HACERLES (render=PINTARLOS)
 //1. LLAMAR AL API
 buscarMedicos()
 .then(function(respuestaBack){
     console.log(respuestaBack)
+    cantidadMedicos = respuestaBack.length;
 
 //2. CREAR UNA REFERENCIA A UNA ETIQUETA DE HTML DONDE VAMOS A RENDERIZAR
 let fila=document.getElementById("fila");
@@ -65,6 +66,8 @@ respuestaBack.forEach(function(medico){
     columna.appendChild(tarjeta);
     fila.appendChild(columna);
 });
-})
+});
+let contador = document.getElementById("contador");
+contador.textContent = cantidadMedicos;
 
 

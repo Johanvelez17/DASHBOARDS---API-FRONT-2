@@ -1,6 +1,6 @@
 import { buscarPacientes } from "../services/servicioPaciente.js";
 
-
+let cantidadPacientes = 0;
 //CONTROLADOR DE DASHBOARDS
 
 //OBJETIVO:Recibir datos del BACK y hacerles render (render = PINTARLOS)
@@ -9,6 +9,7 @@ import { buscarPacientes } from "../services/servicioPaciente.js";
 buscarPacientes()
 .then(function(respuestaBack){
   console.log(respuestaBack)
+  cantidadPacientes = respuestaBack.length;
 
   
   //2. CREAR UNA REFERENCIA A UNA ETIQUETA HTML DONDE VAMOS A RENDERIZAR
@@ -73,7 +74,9 @@ fechaAfiliacion .textContent = paciente.fechaAfiliacion ;
 
   });
 
-})
+});
+let contador = document.getElementById("contador");
+contador.textContent = cantidadPacientes;
 
 
   

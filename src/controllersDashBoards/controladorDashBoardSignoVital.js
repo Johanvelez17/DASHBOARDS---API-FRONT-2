@@ -1,11 +1,13 @@
 import {buscarSignosVitales} from "../services/servicioSignoVital.js"
 
+let cantidadSignosVitales = 0;
 //OBJETIVO:Recibir datos del BACK y hacerles render (render = PINTARLOS)
 //1. LLAMAR AL API
 
 buscarSignosVitales()
 .then(function(respuestaBack){
   console.log(respuestaBack)
+  cantidadSignosVitales = respuestaBack.length;
 
     //2. CREAR UNA REFERENCIA A UNA ETIQUETA HTML DONDE VAMOS A RENDERIZAR
     let fila=document.getElementById("fila");
@@ -42,3 +44,5 @@ buscarSignosVitales()
     
     })
 });
+let contador = document.getElementById("contador");
+contador.textContent = cantidadSignosVitales;

@@ -64,17 +64,18 @@
     </header>
 
     <main class="contenedor-main">
+        <!-- Cambié la línea de abajo (Quité el div en el que estaba la imagen, y saqué la imagen al principio del main) -->
+        <img src="../../../assets/img/logoPagina.png" alt="logo" class="img-fluid position-absolute top-50 start-50 translate-middle" style="width: 60%; opacity: 0.3; z-index: -1;">  
         <section class="container my-5">
-            <div class="row">
-                <div class="col-12 col-md-9 border rounded p-5 shadow">
+            <!-- Añadí los estilos para centrar el contenido -->
+            <div class="row justify-content-center">
+                <!-- Añadí los estilos para el efecto glass -->
+                <div class="col-12 col-md-9 border rounded p-5 shadow text-center" style="backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.3);">
                     <h4>Medicamentos registrados: </h4>
-                    <p>Hasta la fecha la APP registra <span class="fw-bold">2200</span> medicamentos.</p>
+                    <p>Hasta la fecha la APP registra <span class="fw-bold contador">0</span> medicamentos.</p>
                     <i class="bi bi-capsule fs-1"></i>
                     <i class="bi bi-heart-pulse-fill fs-1 mx-3"></i>
                     <i class="bi bi-prescription2 fs-1"></i>
-                </div>
-                <div class="col-12 col-md-3">
-                    <img src="../../../assets/img/tigrelogo.png" alt="logo" class="img-fluid">
                 </div>
             </div>
         </section>
