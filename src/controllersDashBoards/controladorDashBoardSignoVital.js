@@ -8,6 +8,8 @@ buscarSignosVitales()
 .then(function(respuestaBack){
   console.log(respuestaBack)
   cantidadSignosVitales = respuestaBack.length;
+  let contador = document.querySelector(".contador");
+  contador.textContent = cantidadSignosVitales;
 
     //2. CREAR UNA REFERENCIA A UNA ETIQUETA HTML DONDE VAMOS A RENDERIZAR
     let fila=document.getElementById("fila");
@@ -33,7 +35,7 @@ buscarSignosVitales()
     valor.textContent=signoVital.valor
     
     let fechamedida=document.createElement("p");
-    fechamedida.textContent=signoVital.fechamedida
+    fechamedida.textContent=signoVital.fechaMedida;
 
     //PASO FINAL (ORDENAR LAS CARTAS)
     tarjeta.appendChild(nombre);
@@ -44,5 +46,3 @@ buscarSignosVitales()
     
     })
 });
-let contador = document.getElementById("contador");
-contador.textContent = cantidadSignosVitales;

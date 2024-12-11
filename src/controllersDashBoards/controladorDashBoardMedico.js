@@ -6,6 +6,8 @@ buscarMedicos()
 .then(function(respuestaBack){
     console.log(respuestaBack)
     cantidadMedicos = respuestaBack.length;
+    let contador = document.querySelector(".contador");
+    contador.textContent = cantidadMedicos;
 
 //2. CREAR UNA REFERENCIA A UNA ETIQUETA DE HTML DONDE VAMOS A RENDERIZAR
 let fila=document.getElementById("fila");
@@ -67,7 +69,6 @@ respuestaBack.forEach(function(medico){
     fila.appendChild(columna);
 });
 });
-let contador = document.getElementById("contador");
-contador.textContent = cantidadMedicos;
+
 
 

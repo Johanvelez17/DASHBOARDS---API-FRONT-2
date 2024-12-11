@@ -10,6 +10,9 @@ buscarPacientes()
 .then(function(respuestaBack){
   console.log(respuestaBack)
   cantidadPacientes = respuestaBack.length;
+  let contador = document.querySelector(".contador");
+  console.log(contador)
+  contador.textContent = cantidadPacientes;
 
   
   //2. CREAR UNA REFERENCIA A UNA ETIQUETA HTML DONDE VAMOS A RENDERIZAR
@@ -75,8 +78,7 @@ fechaAfiliacion .textContent = paciente.fechaAfiliacion ;
   });
 
 });
-let contador = document.getElementById("contador");
-contador.textContent = cantidadPacientes;
+
 
 
   

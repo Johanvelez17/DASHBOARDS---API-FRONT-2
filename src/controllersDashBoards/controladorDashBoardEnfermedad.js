@@ -6,8 +6,9 @@ let cantidadEnfermedades = 0;
 buscarEnfermedades()
 .then(function(respuestaBack){
   console.log(respuestaBack) 
-
   cantidadEnfermedades = respuestaBack.length;
+  let contador = document.getElementById("contador");
+  contador.textContent = cantidadEnfermedades;
 
 //2. CREAR UNA REFERENCIA A UNA ETIQUETA DE HTML DONDE VAMOS A RENDERIZAR
 let fila=document.getElementById("fila");
@@ -52,5 +53,3 @@ respuestaBack.forEach(function(enfermedad){
 });
 });
 
-let contador = document.getElementById("contador");
-contador.textContent = cantidadEnfermedades;

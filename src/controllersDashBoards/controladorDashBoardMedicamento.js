@@ -9,6 +9,8 @@ buscarMedicamentos()
 .then(function(respuestaBack){
   console.log(respuestaBack) 
   cantidadMedicamentos = respuestaBack.length;
+  let contador = document.querySelector(".contador");
+  contador.textContent = cantidadMedicamentos;
 
 //2. CREAR UNA REFERENCIA A UNA ETIQUETA DE HTML DONDE VAMOS A RENDERIZAR
 let fila=document.getElementById("fila");
@@ -66,5 +68,3 @@ respuestaBack.forEach(function(medicamento){
 });
 
 });
-let contador = document.getElementById("contador");
-contador.textContent = cantidadMedicamentos;
