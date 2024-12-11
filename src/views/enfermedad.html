@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enfermedad</title>
+    <title>Registro || Enfermedad</title>
     <link rel="shortcut icon" href="../../assets/img/logoPagina.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/styles/enfermedad.css">
@@ -104,65 +104,77 @@
             </div>
         </section> -->
         <section>
-            <div class="contenedor-general"> 
+            <div class="contenedor-general">
                 <div class="cajita-formulario">
-                        <div class="contenedor-formulario">
-                            <div class="caja-titulo">
-                                <h2>¡REGISTRO DE ENFERMEDADES!</h2>
-                            </div>
-                            <form>
-                              <div>
-                                  <span>
-                                    <i class="bi bi-virus"></i>
-                                  </span>
-                                  <label>Nombre De Enfermedad</label>
-                                  <input type="text"  id="nombreenfermedad" placeholder="Hipertensión Arterial">
-                              </div>
-                              <div>
-                                  <span>
-                                    <i class="bi bi-clipboard2-pulse-fill"></i>
-                                  </span>
-                                  <label>Síntomas</label>
-                                  <input type="text"  id="sintomasenfermedad" placeholder="Dolor de cabeza, mareos...">
-                              </div>
-                              <div>
-                                  <span>
-                                    <i class="bi bi-list-ol"></i>
-                                  </span>
-                                  <label>Clasificación</label>
-                                    <input type="text" id="clasificacionenfermedad" placeholder="Enfermedad Crónica">
-                              </div>
-                              <div>
-                                  <span>
-                                    <i class="bi bi-123"></i>
-                                  </span>
-                                  <label class="form-label">Grado</label>
-                                   <select class="form-select select" id="gradoenfermedad">
-                                        <option selected>Tipo de grado</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                   </select>
-                              </div>
-                              <div class="mb-5">
-                                  <span>
-                                    <i class="bi bi-percent"></i>
-                                  </span>
-                                  <label>Probabilidad De Vida</label>
-                                  <input type="text" id="probabilidadvidaenfermedad" placeholder="Baja">
-                              </div>
-                              
-                              <button class="btn btn-primary mt-5" type="submit" id="botonregistroenfermedad">Registrar</button>
-                              
-                            </form>
+                    <div class="contenedor-formulario">
+                        <div class="caja-titulo">
+                            <h2>¡REGISTRO DE ENFERMEDADES!</h2>
                         </div>
+                        <form>
+                            <!-- Nombre de la enfermedad -->
+                            <div>
+                                <span>
+                                    <i class="bi bi-virus"></i>
+                                </span>
+                                <label>Nombre De Enfermedad</label>
+                                <input type="text" id="nombreenfermedad" placeholder="Hipertensión Arterial" required title="Ingresa el nombre de la enfermedad" pattern="[A-Za-z\s]+" />
+                            </div>
+                            
+                            <!-- Síntomas -->
+                            <div>
+                                <span>
+                                    <i class="bi bi-clipboard2-pulse-fill"></i>
+                                </span>
+                                <label>Síntomas</label>
+                                <input type="text" id="sintomasenfermedad" placeholder="Dolor de cabeza, mareos..." required title="Ingresa los síntomas de la enfermedad" />
+                            </div>
+                            
+                            <!-- Clasificación -->
+                            <div>
+                                <span>
+                                    <i class="bi bi-list-ol"></i>
+                                </span>
+                                <label>Clasificación</label>
+                                <input type="number" id="clasificacionenfermedad" placeholder="90" required title="Ingresa la clasificación de la enfermedad (Número)" min="1" />
+                            </div>
+                            
+                            <!-- Grado -->
+                            <div>
+                                <span>
+                                    <i class="bi bi-123"></i>
+                                </span>
+                                <label class="form-label">Grado</label>
+                                <select class="form-select select" id="gradoenfermedad" required>
+                                    <option selected disabled>Selecciona un grado</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Probabilidad de Vida -->
+                            <div>
+                                <span>
+                                    <i class="bi bi-percent"></i>
+                                </span>
+                                <label>Probabilidad De Vida</label>
+                                <input type="number" id="probabilidadvidaenfermedad" placeholder="70" required title="Ingresa la probabilidad de vida de la enfermedad">
 
+                            </div>
+                            
+                            <!-- Botón de Registro -->
+                            <button class="btn btn-primary mt-4" type="submit" id="botonregistroenfermedad">Registrar</button>
+                        </form>
+                    </div>
+                    
                     <div class="contenedor-imagen">
                         <!-- Aquí va una imagen -->
                     </div>
                 </div>
             </div>
         </section>
+        
+        
     </main>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -96,7 +96,7 @@ Estilos del formulario
     height: 100%;
     background-color: #0008;  
     z-index: -1;  
-  }
+}
 
 .contenedor-formulario{
     display: flex;
@@ -113,7 +113,7 @@ Estilos del formulario
 }
 
 .contenedor-formulario form{
-    background-color: #fff6;
+    background-color: #fff8;
     align-self: center;
     display: flex;
     flex-wrap: wrap;
@@ -126,6 +126,17 @@ Estilos del formulario
 .contenedor-formulario form div{
     margin-top: 10px;
 }
+
+input.valid {
+    border-color: #28a745 !important; 
+    background-color:#28a74522 !important;
+}
+
+input.invalid {
+    border-color: #dc3545 !important; 
+    background-color: #dc354522 !important;
+}
+
 
 .contenedor-formulario form div label{
     margin-top: 10px !important;

@@ -112,7 +112,7 @@
 }
 
 .contenedor-formulario form{
-    background-color: #fff6;
+    background-color: #fff8;
     align-self: center;
     display: flex;
     flex-wrap: wrap;
@@ -167,6 +167,28 @@ form button {
     height:40px;
 }
 
+
+input.valid {
+    border-color: #28a745 !important; 
+    background-color:#28a74522 !important;
+}
+
+input.invalid {
+    border-color: #dc3545 !important; 
+    background-color: #dc354522 !important;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #28a745; 
+}
+
+
+input[type="checkbox"]:not(:checked) {
+    background-color: transparent; 
+    border: 1px solid #0084ff;
+}
+
+
 .contenedor-formulario div input{
     background-color: transparent;
     width:220px;
@@ -175,6 +197,7 @@ form button {
     border-bottom:1px solid #0006;
     font-family: sans-serif;
 }
+
 
 .contenedor-formulario div input:focus{
     outline: none; 

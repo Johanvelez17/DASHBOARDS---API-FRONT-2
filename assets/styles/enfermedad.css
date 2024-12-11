@@ -111,11 +111,11 @@
     text-align: center;
     align-self: center;
     text-shadow: 0 3px 3px #0084ff;
-    margin-top:150px;
+    margin-top:240px;
 }
 
 .contenedor-formulario form{
-    background-color: #fff6;
+    background-color: #fff8;
     align-self: center;
     display: flex;
     flex-wrap: wrap;
@@ -126,6 +126,16 @@
 
 .contenedor-formulario form div{
     margin-top: 10px;
+}
+
+input.valid {
+    border-color: #28a745 !important; 
+    background-color:#28a74522 !important;
+}
+
+input.invalid {
+    border-color: #dc3545 !important; 
+    background-color: #dc354522 !important;
 }
 
 .contenedor-formulario form div label{
