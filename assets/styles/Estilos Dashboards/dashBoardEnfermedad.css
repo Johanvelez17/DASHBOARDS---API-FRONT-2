@@ -72,3 +72,7 @@
 .contenedor-main{
     margin-top:200px;
 }
+
+.card p{
+    background-color: red;
+}

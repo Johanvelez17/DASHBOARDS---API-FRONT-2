@@ -115,14 +115,9 @@ botonRegistroMedicamento.addEventListener("click", function(evento) {
             console.log(datosFormularioMedicamento);
             registrarMedicamento(datosFormularioMedicamento)
             .then(function(respuestaBack){
-                console.log(respuestaBack);
-                Swal.fire({
-                    title: "¡Registro Exitoso!",
-                    text: "¡El medicamento ha sido registrado correctamente!",
-                    icon: "success"
-                }).then(() => {
-                    window.location.href = "../views/dashboards/dashBoardMedicamento.html";  // Redirige al dashboard de Medicamentos
-                });
+                console.log(respuestaBack);     
+                window.location.href = "../views/dashboards/dashBoardMedicamento.html";  // Redirige al dashboard de Medicamentos
+                
             });
         });
     }
